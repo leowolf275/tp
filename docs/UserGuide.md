@@ -16,6 +16,7 @@ at the National University of Singapore. While optimised for use via a Command L
 6. [FAQ](#faq)
 7. [Known issues](#known-issues)
 8. [Command summary](#command-summary)
+
 --------------------------------------------------------------------------------------------------------------------
 ## Quick start
 
