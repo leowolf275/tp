@@ -26,6 +26,7 @@ public class Messages {
             EventfulNUS allows you to manage a list of people and events, for easier event planning for\s
             NUS Inter-Faculty Games.
 
+<<<<<<< HEAD
             These are the available commands:
 
             help - Display this help page.
@@ -152,6 +153,8 @@ public class Messages {
             5. FA - First Aid
             6. BMA - Booth Manner
 
+=======
+>>>>>>> 81eb053e7a5ff6b36c5fed7fb5e154f0ea92ebb7
             Find out more about using EventfulNUS on our User Guide at:
             https://ay2425s1-cs2103t-w14-4.github.io/tp/UserGuide.html"
             Press the 'Copy URL' button to copy the link to your clipboard.""";
@@ -201,7 +204,7 @@ public class Messages {
                 .append("; Date and Time: ")
                 .append(event.getDateTimeDisplayString());
         builder.append("; Participants: ");
-        event.getParticipants().forEach(builder::append);
+        event.getParticipants().stream().map(Messages::formatPerson).forEach(builder::append);
         return builder.toString();
     }
 }
