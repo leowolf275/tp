@@ -332,6 +332,7 @@ Volunteer Roles (Code - Role Name):
 
 1. **When using multiple screens**, if you move the application to a secondary screen, and later switch to using only the primary screen, the GUI will open off-screen. The remedy is to delete the `preferences.json` file created by the application before running the application again.
 2. **If you minimize the Help Window** and then run the `help` command (or use the `Help` menu, or the keyboard shortcut `F1`) again, the original Help Window will remain minimized, and no new Help Window will appear. The remedy is to manually restore the minimized Help Window.
+3. **If you filter the list of people using the find command and then try to add/edit participants in an event**, the app will not be able to find those people, who have been previously filtered out.
 
 --------------------------------------------------------------------------------------------------------------------
 
