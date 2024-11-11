@@ -76,8 +76,6 @@ at the National University of Singapore. While optimised for use via a Command L
 
 Shows a message explaining how to use some of the commands. Also contains a link to this guide.
 
-![help message](images/helpMessage.png)
-
 Format: `help`
 
 ### Adding a person: `add`

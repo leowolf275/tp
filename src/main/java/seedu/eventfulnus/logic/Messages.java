@@ -64,8 +64,8 @@ public class Messages {
             list - List all Persons registered to EventfulNUS.
             Usage: list
 
-            listevents - List all Events registered to EventfulNUS.
-            Usage: listevents
+            listevent - List all Events registered to EventfulNUS.
+            Usage: listevent
 
             edit - Update a Person's information.
             Usage: edit <id> {n/<name>} {p/<phone number>} {m/<email>} {r/<role1>} {r/<role2>}\s

@@ -137,7 +137,6 @@ The `Model` component,
 
 </div>
 
-
 ### Storage component
 
 **API** : [`Storage.java`](https://github.com/se-edu/addressbook-level3/tree/master/src/main/java/seedu/address/storage/Storage.java)
@@ -301,6 +300,7 @@ Priorities: High (must have) - `HIGH`, Medium (nice to have) - `MED`, Low (unlik
 | `HIGH`   | first-time user | search for participants by name, phone number or email                            | locate details of participants without having to go through the entire list |
 | `HIGH`   | first-time user | view a list of participants for a specific sub-event                              | understand how participants are scheduled and grouped                       |
 | `HIGH`   | first-time user | save the current participant list and details to a file                           | back up my participant records and access them later                        |
+| `HIGH`   | first-time user | add a new event                                                                   | start building my event list from scratch                                   |
 | `HIGH`   | familiar user   | update a participant's details                                                    | keep participant records current and accurate                               |
 | `HIGH`   | familiar user   | assign participants to specific sub-events                                        | track their involvement and ensure proper scheduling                        |
 | `HIGH`   | familiar user   | group participants by their faculty membership                                    | manage and organize participants according to faculty membership            |
@@ -452,13 +452,13 @@ Use case resumes from step 2.
 <hr>
 
 **System: EventfulNUS**\
-**Use case: UC7 - Delete participant**\
+**Use case: UC7 - Delete person**\
 **Actor: User**\
-**Guarantee: MSS → The participant at the specified index will not be present in the system after the command is entered**
+**Guarantee: MSS → The person at the specified index will not be present in the system after the command is entered**
 
 MSS:
-1. User requests to delete a participant
-2. System deletes the participant and displays a message indicating no errors.
+1. User requests to delete a person
+2. System deletes the person and displays a message indicating no errors.
 
 Extensions:\
 1a. System detects an error in the entered data.\
@@ -467,7 +467,7 @@ Extensions:\
 Steps 1a1-1a2 are repeated until the data entered is correct.\
 Use case resumes from step 2.
 
-1b. System does not find specified participant in the system.\
+1b. System does not find specified person in the system.\
 1b1. System prompts user to re-enter data.\
 1b2. User enters new data.\
 Steps 1b1-1b2 are repeated until the data entered is correct.\
@@ -476,7 +476,24 @@ Use case resumes from step 2.
 <hr>
 
 **System: EventfulNUS**\
-**Use case: UC8 - Delete event**\
+**Use case: UC8 - Add event**\
+Actor: User**\
+
+MSS:
+1. User requests to add an event
+2. System adds the event and displays a message indicating no errors.
+
+Extensions:
+1a. System detects an error in the entered data.
+1a1. System prompts user to re-enter data.
+1a2. User enters new data.
+Steps 1a1-1a2 are repeated until the data entered is valid.
+Use case resumes from step 2.
+
+<hr>
+
+**System: EventfulNUS**\
+**Use case: UC9 - Delete event**\
 **Actor: User**\
 **Guarantee: MSS → The event at the specified index will not be present in the system after the command is entered**
 
